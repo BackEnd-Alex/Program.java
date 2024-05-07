@@ -34,7 +34,7 @@ public class Program {
         System.out.println("Parcelas :");
         for(Installments installment : contract.getInstallments()){
             System.out.println(installment);
-            System.out.println("Fazendo um commit");
+
         }
         sc.close();
     }

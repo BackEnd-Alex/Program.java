@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b5283dc-909f-46f1-871b-95b32b1f43ee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8b5283dc-909f-46f1-871b-95b32b1f43ee" name="Changes" comment="Testando commit">
       <change beforePath="$PROJECT_DIR$/src/apllication/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/apllication/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ContractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ContractService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/PaypalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PaypalService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +81,19 @@
       <option name="presentableId" value="Default" />
       <updated>1715026572314</updated>
     </task>
+    <task id="LOCAL-00001" summary="Testando commit">
+      <option name="closed" value="true" />
+      <created>1715106252249</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715106252250</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Testando commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testando commit" />
   </component>
 </project>
