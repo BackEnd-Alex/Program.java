@@ -3,6 +3,7 @@ package apllication;
 import entities.Contract;
 import entities.Installments;
 import services.ContractService;
+import services.PaypalService;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -27,12 +28,13 @@ public class Program {
 
         System.out.print("Entre com o número de parcelas: ");
         int n = sc.nextInt();
-        ContractService service = new ContractService(null);
-        // Como não foi implementado o onlinepayment deixaremos o valor null no argumento.
+        ContractService service = new ContractService(new PaypalService());
+
         service.processContract(contract, n);
         System.out.println("Parcelas :");
         for(Installments installment : contract.getInstallments()){
             System.out.println(installment);
+            System.out.println("Fazendo um commit");
         }
         sc.close();
     }

@@ -11,13 +11,17 @@ public class ContractService {
     public ContractService(OnlinePaymentService onlinePaymentService) {
         this.onlinePaymentService = onlinePaymentService;
     }
-        public void processContract(Contract contrac , int months){
-        contrac.getInstallments().add(new Installments
-                (LocalDate.of(2018,7,25),206.04));
 
-        contrac.getInstallments().add(new Installments
-                    (LocalDate.of(2018,8,25),208.08));
+    public void processContract(Contract contrac, int months) {
+        double bacisQuota = contrac.getTotalValue() / months;
+        for (int i = 1; i <= months; i++) {
+
+            LocalDate dueDate = contrac.getDate().plusMonths(i);
+            double  interest = onlinePaymentService.interest(bacisQuota, i);
+           double fee = onlinePaymentService.paymentFree(bacisQuota+ interest);
+           double quota = bacisQuota + interest + fee;
+           contrac.getInstallments().add(new Installments(dueDate,quota));
+
+        }
     }
-
-
 }
